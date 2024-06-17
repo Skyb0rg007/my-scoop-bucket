@@ -14,8 +14,42 @@
         ],
         [
             "bin\\.run\\run.x86-win32.exe",
+            "ml-build",
+            "@SMLload=$dir\\bin\\.heap\\ml-build"
+        ],
+        [
+            "bin\\.run\\run.x86-win32.exe",
+            "ml-burg",
+            "@SMLload=$dir\\bin\\.heap\\ml-burg"
+        ],
+        [
+            "bin\\.run\\run.x86-win32.exe",
+            "ml-lex",
+            "@SMLload=$dir\\bin\\.heap\\ml-lex"
+        ],
+        [
+            "bin\\.run\\run.x86-win32.exe",
+            "ml-nlffigen",
+            "@SMLload=$dir\\bin\\.heap\\ml-nlffigen"
+        ],
+        [
+            "bin\\.run\\run.x86-win32.exe",
+            "ml-ulex",
+            "@SMLload=$dir\\bin\\.heap\\ml-ulex"
+        ],
+        [
+            "bin\\.run\\run.x86-win32.exe",
+            "ml-yacc",
+            "@SMLload=$dir\\bin\\.heap\\ml-yacc"
+        ],
+        [
+            "bin\\.run\\run.x86-win32.exe",
             "sml",
             "@SMLload=$dir\\bin\\.heap\\sml"
+        ],
+        [
+            "bin\\ml-build.bat",
+            "ml-build"
         ]
     ],
     "env_set": {

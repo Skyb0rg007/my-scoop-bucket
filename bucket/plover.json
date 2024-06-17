@@ -1,5 +1,4 @@
 {
-    "##": "version checking not supported: Plover doesn't use numbers to indicate new releases",
     "version": "4.0.0rc2",
     "description": "Plover is a desktop application for stenography",
     "homepage": "https://www.openstenoproject.org/plover",

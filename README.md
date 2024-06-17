@@ -26,7 +26,21 @@ or similar.
 This does mean I cannot use the default checkver or autoupdate
 features of Scoop (everything is considered "version 4.0.0").
 
-<!-- TODO: SML/NJ -->
+## SML of New Jersey
+[Standard ML of New Jersey](https://www.smlnj.org/smlnj.html)
+(abbreviated SML/NJ) is a compiler for the
+[Standard ML '97](https://www.smlnj.org/sml97.html)
+programming language with associated libraries, tools, and documentation.
+SML/NJ is free, open source software.
+
+### Note
+Compared to a standard installation, the shims do not use batch.
+This means they better support command line arguments with spaces in them,
+and can handle more than 9 positional arguments.
+The `link-sml` batch script was an internal detail of previous `ml-build`
+implementations which is no longer used, so it is not exposed as a shim.
+
+Version checking is not currently implemented, but could in theory.
 
 ## Template TODO list
 
