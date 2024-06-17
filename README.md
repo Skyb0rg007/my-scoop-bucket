@@ -28,7 +28,7 @@ scoop install Skyb0rg007-extras/<appname>
    - Select `Read and write permissions`.
    - Then `Save`.
 4. [X] Document the bucket in `README.md`.
-5. [ ] Replace the placeholder repository string in `bin/auto-pr.ps1`.
+5. [X] Replace the placeholder repository string in `bin/auto-pr.ps1`.
 6. [ ] Create new manifests by copying `bucket/app-name.json.template` to
    `bucket/<app-name>.json`.
 7. [ ] Commit and push changes.
