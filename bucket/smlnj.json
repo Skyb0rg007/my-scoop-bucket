@@ -1,0 +1,24 @@
+{
+    "version": "110.99.5",
+    "description": "Standard ML of New Jersey is a compiler for the Standard ML '97 programming language with associated libraries, tools, and documentation.",
+    "homepage": "https://www.smlnj.org",
+    "license": "BSD-3-Clause",
+    "url": "http://smlnj.cs.uchicago.edu/dist/working/110.99.5/smlnj-110.99.5.msi",
+    "hash": "f5a382d049f407ceb111ff06a01f40fcd7c5a949a11f068e9180ff5d2f53d828",
+    "extract_dir": "PFiles\\SMLNJ",
+    "bin": [
+        [
+            "bin\\.run\\run.x86-win32.exe",
+            "ml-antlr",
+            "@SMLload=$dir\\bin\\.heap\\ml-antlr"
+        ],
+        [
+            "bin\\.run\\run.x86-win32.exe",
+            "sml",
+            "@SMLload=$dir\\bin\\.heap\\sml"
+        ]
+    ],
+    "env_set": {
+        "SMLNJ_HOME": "$dir"
+    }
+}
