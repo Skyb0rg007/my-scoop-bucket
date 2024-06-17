@@ -11,7 +11,21 @@ scoop bucket add Skyb0rg007-extras https://github.com/Skyb0rg007/my-scoop-bucket
 scoop install Skyb0rg007-extras/<appname>
 ```
 
-<!-- TODO: Plover -->
+## Plover
+
+[Plover](https://www.openstenoproject.org/plover/) is an application for
+hobbiest stenographers which acts as a keyboard replacement.
+
+### Note
+While the most recent (non pre-)release is labeled a release candidate,
+this version of Plover is recommended for most users due to the inclusion
+of the Plugins feature and being relatively stable.
+Because the most recent "SemVer stable" release is more than 4 years behind the
+4.0.0rc2 release, I don't see a reason to name the package `plover-dev`
+or similar.
+This does mean I cannot use the default checkver or autoupdate
+features of Scoop (everything is considered "version 4.0.0").
+
 <!-- TODO: SML/NJ -->
 
 ## Template TODO list
@@ -28,9 +42,9 @@ scoop install Skyb0rg007-extras/<appname>
    - Then `Save`.
 4. [X] Document the bucket in `README.md`.
 5. [X] Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. [ ] Create new manifests by copying `bucket/app-name.json.template` to
+6. [X] Create new manifests by copying `bucket/app-name.json.template` to
    `bucket/<app-name>.json`.
-7. [ ] Commit and push changes.
+7. [X] Commit and push changes.
 8. [ ] If you'd like your bucket to be indexed on `https://scoop.sh`, add the
    topic `scoop-bucket` to your repository.
 
