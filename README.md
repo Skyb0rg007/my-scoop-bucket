@@ -1,7 +1,6 @@
 # Skyb0rg007's Custom Scoop Bucket
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/excavator.yml)
 
 This bucket contains useful applications which are missing from the default Scoop repositories
 
