@@ -14,6 +14,11 @@
     "extract_dir": "plover-4.0.0rc2-win64",
     "bin": "plover.exe",
     "shortcuts": [
-        [ "plover.exe", "Plover" ]
+        [
+            "plover.exe",
+            "Plover",
+            "",
+            "data\\plover.ico"
+        ]
     ]
 }
