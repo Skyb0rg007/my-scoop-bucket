@@ -15,17 +15,17 @@
     "persist": [
         "persist"
     ],
-    "post_install": [
+    "pre_install": [
         "if (-not (Test-Path \"$persist_dir\\portable.cfg\")) {",
         "    New-Item \"$persist_dir\\plover.cfg\" -ItemType File | Out-Null",
         "}",
-        "Write-Output \"Set-Location persistent -ErrorAction Stop`n& ..\\plover.exe @args\" | Out-File -Encoding utf8 \"$dir\\plover.ps1\""
+        "Write-Output \"Set-Location persist -ErrorAction Stop`n& ..\\plover.exe @args\" | Out-File -Encoding utf8 \"$dir\\plover.ps1\""
     ],
     "shortcuts": [
         [
-            "powershell.exe",
-            "Plover",
             "plover.ps1",
+            "Plover",
+            "",
             "data\\plover.ico"
         ]
     ]
