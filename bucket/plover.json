@@ -12,11 +12,20 @@
     },
     "extract_dir": "plover-4.0.0rc2-win64",
     "bin": "plover.exe",
+    "persist": [
+        "persist"
+    ],
+    "post_install": [
+        "if (-not (Test-Path \"$persist_dir\\portable.cfg\")) {",
+        "    New-Item \"$persist_dir\\plover.cfg\" -ItemType File | Out-Null",
+        "}",
+        "Write-Output \"Set-Location persistent -ErrorAction Stop`n& ..\\plover.exe @args\" | Out-File -Encoding utf8 \"$dir\\plover.ps1\""
+    ],
     "shortcuts": [
         [
-            "plover.exe",
+            "powershell.exe",
             "Plover",
-            "",
+            "plover.ps1",
             "data\\plover.ico"
         ]
     ]
