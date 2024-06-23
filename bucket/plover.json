@@ -11,7 +11,7 @@
         }
     },
     "extract_dir": "plover-4.0.0rc2-win64",
-    "bin": "plover.exe",
+    "bin": "plover.cmd",
     "persist": [
         "persist"
     ],
@@ -19,11 +19,14 @@
         "if (-not (Test-Path \"$persist_dir\\portable.cfg\")) {",
         "    New-Item \"$persist_dir\\plover.cfg\" -ItemType File | Out-Null",
         "}",
-        "Write-Output \"Set-Location persist -ErrorAction Stop`n& ..\\plover.exe @args\" | Out-File -Encoding utf8 \"$dir\\plover.ps1\""
+        "@(",
+        "    '@echo off'",
+        "    'start \"plover\" /D \"%~dp0persist\" \"%~dp0plover.exe\" %*'",
+        ") | Set-Content \"$dir\\plover.cmd\" -Encoding ASCII"
     ],
     "shortcuts": [
         [
-            "plover.ps1",
+            "plover.cmd",
             "Plover",
             "",
             "data\\plover.ico"
