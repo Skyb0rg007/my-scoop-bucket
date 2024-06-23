@@ -13,7 +13,7 @@
     "bin": "plover_console.cmd",
     "persist": "persist",
     "pre_install": [
-        "if (-not (Test-Path \"$persist_dir\\persist\\portable.cfg\")) {",
+        "if (-not (Test-Path \"$persist_dir\\persist\\plover.cfg\")) {",
         "    New-Item \"$dir\\persist\\plover.cfg\" -ItemType File -Force | Out-Null",
         "}",
         "@(",
