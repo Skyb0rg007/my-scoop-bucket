@@ -32,5 +32,9 @@
             "oracle.exe",
             "Cockatrice\\Oracle"
         ]
-    ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Cockatrice/Cockatrice",
+        "regex": "(?:\\d{4})-(?:\\d{2})-(?:\\d{2})-Release-([\\d.]+)"
+    }
 }

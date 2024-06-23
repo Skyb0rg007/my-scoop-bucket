@@ -79,7 +79,7 @@ scoop install Skyb0rg007-extras/cockatrice
 scoop install Skyb0rg007-extras/cockatrice-qt5
 ```
 
-### Note
+### Note on manifests
 Cockatrice has three Windows downloads:
 `Windows 10+`, `Windows 7+`, and `Windows 7+ (32-bit)`.
 This is because the most recent version of the UI libary (`Qt`)
@@ -89,6 +89,14 @@ this bucket contains two manifests.
 The `cockatrice` manifest includes the `Windows 10+` download.
 The `cockatrice-qt5` manifest includes the `Windows 7+`
 and `Windows 7+ (32-bit)` downloads.
+
+### Note on autoupdate
+Currently autoupdate is not supported, and I don't believe it is possible
+due to the naming of releases.
+Cockatrice adds a name to releases that doesn't appear in the tag -
+"Rings of the Wild", "Prismatic Bridge", etc.
+If this can be detected please submit an issue and I will add an autoupdate
+field.
 
 ## Template TODO list
 
