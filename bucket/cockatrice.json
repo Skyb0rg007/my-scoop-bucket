@@ -14,12 +14,19 @@
         "Remove-Item -Path $dir\\`$PLUGINSDIR -Recurse",
         "Remove-Item -Path $dir\\uninstall.exe"
     ],
-    "persist": [
-        "data"
-    ],
+    "persist": "data",
     "shortcuts": [
-        [ "cockatrice.exe", "Cockatrice\\Cockatrice" ],
-        [ "servatrice.exe", "Cockatrice\\Servatrice" ],
-        [ "oracle.exe", "Cockatrice\\Oracle" ]
+        [
+            "cockatrice.exe",
+            "Cockatrice\\Cockatrice"
+        ],
+        [
+            "servatrice.exe",
+            "Cockatrice\\Servatrice"
+        ],
+        [
+            "oracle.exe",
+            "Cockatrice\\Oracle"
+        ]
     ]
 }
