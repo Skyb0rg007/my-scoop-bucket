@@ -16,7 +16,7 @@ scoop install Skyb0rg007-extras/<appname>
 [Plover](https://www.openstenoproject.org/plover/) is an application for
 hobbiest stenographers which acts as a keyboard replacement.
 
-### Note
+### Note on Versioning
 While the most recent (non pre-)release is labeled a release candidate,
 this version of Plover is recommended for most users due to the inclusion
 of the Plugins feature and being relatively stable.
@@ -25,6 +25,18 @@ Because the most recent "SemVer stable" release is more than 4 years behind the
 or similar.
 This does mean I cannot use the default checkver or autoupdate
 features of Scoop (everything is considered "version 4.0.0").
+
+### Note on persistence
+Plover's portable mode sets the configuration directory to the current
+directory as long as there is a `plover.cfg` file there.
+However this dumps plugin files and other persistent data
+in the same directory as the executable itself,
+making it impossible to symlink into the persist directory.
+To avoid this the Scoop App adds `.cmd` wrappers around
+`plover` and `plover_command` executables that first set the working
+directory to the `persist` subfolder.
+The code for this is taken from the [`anki` Scoop module](https://github.com/ScoopInstaller/Extras/blob/21ad585fe555528dae2d27aeab7372303aa9500a/bucket/anki.json#L15).
+This unfortunately means that the command line will flash on launch.
 
 ## SML of New Jersey
 [Standard ML of New Jersey](https://www.smlnj.org/smlnj.html)
