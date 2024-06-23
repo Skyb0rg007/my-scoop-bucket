@@ -11,6 +11,10 @@ scoop bucket add Skyb0rg007-extras https://github.com/Skyb0rg007/my-scoop-bucket
 scoop install Skyb0rg007-extras/<appname>
 ```
 
+## Apps
+- [Plover](#plover)
+- [SML/NJ](#standard-ml-of-new-jersey)
+
 ## Plover
 
 [Plover](https://www.openstenoproject.org/plover/) is an application for
@@ -35,10 +39,11 @@ making it impossible to symlink into the persist directory.
 To avoid this the Scoop App adds `.cmd` wrappers around
 `plover` and `plover_command` executables that first set the working
 directory to the `persist` subfolder.
-The code for this is taken from the [`anki` Scoop module](https://github.com/ScoopInstaller/Extras/blob/21ad585fe555528dae2d27aeab7372303aa9500a/bucket/anki.json#L15).
-This unfortunately means that the command line will flash on launch.
+The [code for this](bucket/plover.json) is copied from the
+[`anki` Scoop module](https://github.com/ScoopInstaller/Extras/blob/21ad585fe555528dae2d27aeab7372303aa9500a/bucket/anki.json#L15).
+This unfortunately means that a command prompt will flash on launch.
 
-## SML of New Jersey
+## Standard ML of New Jersey
 [Standard ML of New Jersey](https://www.smlnj.org/smlnj.html)
 (abbreviated SML/NJ) is a compiler for the
 [Standard ML '97](https://www.smlnj.org/sml97.html)
