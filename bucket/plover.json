@@ -11,18 +11,22 @@
         }
     },
     "extract_dir": "plover-4.0.0rc2-win64",
-    "bin": "plover.cmd",
+    "bin": "plover_console.cmd",
     "persist": [
         "persist"
     ],
     "pre_install": [
         "if (-not (Test-Path \"$persist_dir\\persist\\portable.cfg\")) {",
-        "    New-Item \"$dir\\persist\\plover.cfg\" -ItemType File | Out-Null",
+        "    New-Item \"$dir\\persist\\plover.cfg\" -ItemType File -Force | Out-Null",
         "}",
         "@(",
         "    '@echo off'",
         "    'start \"plover\" /D \"%~dp0persist\" \"%~dp0plover.exe\" %*'",
-        ") | Set-Content \"$dir\\plover.cmd\" -Encoding ASCII"
+        ") | Set-Content \"$dir\\plover.cmd\" -Encoding ASCII",
+        "@(",
+        "    '@echo off'",
+        "    'start \"plover\" /D \"%~dp0persist\" \"%~dp0plover_console.exe\" %*'",
+        ") | Set-Content \"$dir\\plover_console.cmd\" -Encoding ASCII"
     ],
     "shortcuts": [
         [
