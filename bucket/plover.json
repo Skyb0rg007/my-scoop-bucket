@@ -16,8 +16,8 @@
         "persist"
     ],
     "pre_install": [
-        "if (-not (Test-Path \"$persist_dir\\portable.cfg\")) {",
-        "    New-Item \"$persist_dir\\persist\\plover.cfg\" -ItemType File | Out-Null",
+        "if (-not (Test-Path \"$persist_dir\\persist\\portable.cfg\")) {",
+        "    New-Item \"$dir\\persist\\plover.cfg\" -ItemType File | Out-Null",
         "}",
         "@(",
         "    '@echo off'",
