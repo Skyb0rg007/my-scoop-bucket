@@ -6,7 +6,7 @@ This bucket contains useful applications which are missing from the default Scoo
 
 ## Installation
 
-```pwsh
+```shell
 scoop bucket add Skyb0rg007-extras https://github.com/Skyb0rg007/my-scoop-bucket
 scoop install Skyb0rg007-extras/<appname>
 ```
@@ -14,11 +14,16 @@ scoop install Skyb0rg007-extras/<appname>
 ## Apps
 - [Plover](#plover)
 - [SML/NJ](#standard-ml-of-new-jersey)
+- [Cockatrice](#cockatrice)
 
 ## Plover
 
 [Plover](https://www.openstenoproject.org/plover/) is an application for
 hobbiest stenographers which acts as a keyboard replacement.
+
+```shell
+scoop install Skyb0rg007-extras/plover
+```
 
 ### Note on Versioning
 While the most recent (non pre-)release is labeled a release candidate,
@@ -50,6 +55,10 @@ This unfortunately means that a command prompt will flash on launch.
 programming language with associated libraries, tools, and documentation.
 SML/NJ is free, open source software.
 
+```shell
+scoop install Skyb0rg007-extras/smlnj
+```
+
 ### Note
 Compared to a standard installation, the shims do not use batch.
 This means they better support command line arguments with spaces in them,
@@ -58,6 +67,28 @@ The `link-sml` batch script was an internal detail of previous `ml-build`
 implementations which is no longer used, so it is not exposed as a shim.
 
 Version checking is not currently implemented, but could in theory.
+
+## Cockatrice
+[Cockatrice](https://cockatrice.github.io/) is a cross-platform
+virtual tabletop for multiplayer card games.
+
+```shell
+# On 64-bit Windows 10 and up
+scoop install Skyb0rg007-extras/cockatrice
+# Otherwise (just requires Windows 7)
+scoop install Skyb0rg007-extras/cockatrice-qt5
+```
+
+### Note
+Cockatrice has three Windows downloads:
+`Windows 10+`, `Windows 7+`, and `Windows 7+ (32-bit)`.
+This is because the most recent version of the UI libary (`Qt`)
+is not supported on Windows 7.
+Because Scoop does not allow for OS version-based configuration,
+this bucket contains two manifests.
+The `cockatrice` manifest includes the `Windows 10+` download.
+The `cockatrice-qt5` manifest includes the `Windows 7+`
+and `Windows 7+ (32-bit)` downloads.
 
 ## Template TODO list
 
