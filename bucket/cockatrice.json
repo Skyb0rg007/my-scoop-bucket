@@ -28,5 +28,8 @@
             "oracle.exe",
             "Cockatrice\\Oracle"
         ]
-    ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Cockatrice/Cockatrice"
+    }
 }
