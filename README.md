@@ -98,7 +98,13 @@ Cockatrice adds a name to releases that doesn't appear in the tag -
 If this can be detected please submit an issue and I will add an autoupdate
 field.
 
-## Template TODO list
+## Jack's Trunk
+[Jack's Trunk](https://jackstrunk.com) is a unified JackBox launcher.
+It will likely be superceded by the official
+[Jackbox Megapicker](https://www.jackboxgames.com/blog/introducing-the-jackbox-megapicker),
+coming out this July.
+
+## Template todolist
 
 1. [X] Generate your own copy of this repository with the "Use this template"
    button.
