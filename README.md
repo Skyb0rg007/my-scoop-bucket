@@ -1,5 +1,12 @@
 # Skyb0rg007's Custom Scoop Bucket
 
+## Note: This repo is now archived
+
+The primary reasons for preferring portable programs is outweighed by the benefits of Windows compatibility.
+I would recommend using WinGet, especially since some of the packages I wrote Scoop manifests for are already available there.
+Any custom WinGet package will be available from my `packages` repository, under the `Windows/WinGet` directory.
+
+
 [![Tests](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/Skyb0rg007/my-scoop-bucket/actions/workflows/excavator.yml)
 
 This bucket contains useful applications which are missing from the default Scoop repositories
